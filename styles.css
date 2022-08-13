@@ -11,4 +11,52 @@ body {
   --color_two: #a5c9ca;
   --black: #000000;
   --white: #ffffff;
+  color: white;
+}
+.container {
+  display: flex;
+}
+.left-container {
+  background-image: url(assets/background.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 45%;
+}
+.logo-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  width: 100%;
+  margin-top: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.logo {
+  height: 6rem;
+  width: 4rem;
+}
+.logo-text {
+  display: inline;
+  font-size: 90px;
+  color: var(--white);
+}
+
+.right-container {
+  background-color: var(--dark_color);
+  display: flex;
+  align-items: center;
+}
+.form-container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.form-container > div {
+  padding: 1rem 0 1rem 0;
+  height: 5.5em;
+}
+.error {
+  font-size: 12px;
+  font-weight: bold;
+  color: red;
 }
