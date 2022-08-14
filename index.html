@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script async src="script.js"></script>
     <title>SignIn</title>
   </head>
   <body>
@@ -17,46 +18,60 @@
       </div>
       <div class="right-container">
         <div class="right-flex">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quae
-            suscipit necessitatibus a aliquam, nulla nihil iusto quibusdam Ex,
-            officiis dignissimos!
+          <p class="para1">
+            This is the website we wish we had when we were learning on our own.
+            We scour the internet looking for only the best resources to
+            supplement your learning and present them in a logical order.
           </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p class="para2">Your Career in Web Development Starts Here.</p>
           <form class="form-container">
             <div class="form-firstname">
-              <label for="firstname">FIRST NAME</label><br />
+              <label class="formname" for="firstname">FIRST NAME</label><br />
               <input type="text" id="firstname" /><br />
               <span class="error"></span>
             </div>
             <div class="form-secondname">
-              <label for="secondname">SECOND NAME</label><br />
+              <label class="formname" for="secondname">SECOND NAME</label><br />
               <input type="text" id="secondname" /><br />
               <span class="error"></span>
             </div>
             <div class="form-email">
-              <label for="email">EMAIL</label><br />
+              <label
+                class="formname"
+                for="email"
+                id="form_email"
+                title="Plese enter a valid email"
+                >EMAIL</label
+              ><br />
               <input type="email" id="email" /><br />
               <span class="error"></span>
             </div>
             <div class="form-number">
-              <label for="number">PHONE NUMBER</label><br />
-              <input type="text" id="number" /><br />
+              <label class="formname" for="number">PHONE NUMBER</label><br />
+              <input type="number" id="number" /><br />
               <span class="error"></span>
             </div>
             <div class="form-password">
-              <label for="password">PASSWORD</label><br />
+              <label class="formname" for="password">PASSWORD</label><br />
               <input type="password" id="password" /><br />
               <span class="error"></span>
             </div>
             <div class="form-name">
-              <label for="confirm-password">CONFIRM PASSWORD</label><br />
+              <label class="formname" for="confirm-password"
+                >CONFIRM PASSWORD</label
+              ><br />
               <input type="password" id="confirm-password" /><br />
               <span class="error"></span>
             </div>
+            <div>
+              <button class="account-button" type="submit" value="submit">
+                Create Account
+              </button>
+              <p class="login-text">
+                Already have an account? <a class="link" href="#">Login</a>
+              </p>
+            </div>
           </form>
-          <button type="submit">Create Account</button>
-          <p>Already have an account?<a>Log in</a></p>
         </div>
       </div>
     </div>
