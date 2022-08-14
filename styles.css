@@ -5,6 +5,21 @@
   margin: 0%;
   box-sizing: border-box;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+@font-face {
+  font-family: norse-bold;
+  src: url(assets/Norse-Bold.otf);
+}
 body {
   --dark_color: #2c3333;
   --color_one: #395b64;
@@ -15,21 +30,22 @@ body {
 }
 .container {
   display: flex;
+  background-color: var(--dark_color);
 }
 .left-container {
   background-image: url(assets/background.jpg);
   background-size: cover;
+  border-radius: 0 35px 35px 0;
   height: 100vh;
-  width: 45%;
 }
 .logo-background {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 7rem;
-  width: 100%;
+  width: 24rem;
   margin-top: 30%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(57, 91, 100, 0.6);
 }
 .logo {
   height: 6rem;
@@ -38,25 +54,76 @@ body {
 .logo-text {
   display: inline;
   font-size: 90px;
+  font-family: norse-bold;
   color: var(--white);
 }
 
 .right-container {
-  background-color: var(--dark_color);
   display: flex;
   align-items: center;
+  padding-left: 2rem;
+}
+.para1 {
+  font-size: 17px;
+}
+.para1::first-letter {
+  font-size: 42px;
+}
+.para2 {
+  font-size: 18px;
+  color: var(--color_two);
+  padding-top: 1rem;
+  font-weight: bolder;
 }
 .form-container {
-  padding: 1rem;
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 .form-container > div {
   padding: 1rem 0 1rem 0;
-  height: 5.5em;
+  height: 6.5em;
+}
+.formname {
+  font-size: small;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1.5px;
 }
 .error {
   font-size: 12px;
   font-weight: bold;
-  color: red;
+  color: rgb(187, 0, 0);
+  background-color: white;
+}
+div > input {
+  font-size: 22px;
+  padding: 8px;
+  background-color: transparent;
+  border: 3px solid var(--white);
+  border-radius: 10px;
+  color: var(--white);
+  outline: none;
+}
+div > input:invalid {
+  border: 3px solid red;
+}
+.account-button {
+  border-style: none;
+  border-radius: 10px;
+  height: 3em;
+  width: 12em;
+  color: var(--white);
+  background-color: var(--color_one);
+  font-size: 14px;
+  font-weight: bold;
+}
+.login-text {
+  font-size: 15px;
+  padding-top: 0.5rem;
+}
+.link {
+  font-weight: bold;
+  color: var(--color_two);
+  font-size: 16px;
 }
