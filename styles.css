@@ -105,9 +105,6 @@ div > input {
   color: var(--white);
   outline: none;
 }
-div > input:invalid {
-  border: 3px solid red;
-}
 .account-button {
   border-style: none;
   border-radius: 10px;
