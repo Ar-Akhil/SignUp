@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script async src="script.js"></script>
+    <script defer src="script.js"></script>
     <title>SignIn</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
       <div class="left-container">
         <div class="logo-background">
           <img class="logo" src="assets/logo.png" />
-          <p class="logo-text">ODIN</p>
+          <p id="logoname" class="logo-text">ODIN</p>
         </div>
       </div>
       <div class="right-container">
@@ -24,54 +24,54 @@
             supplement your learning and present them in a logical order.
           </p>
           <p class="para2">Your Career in Web Development Starts Here.</p>
-          <form class="form-container">
+          <form name="form" class="form-container">
             <div class="form-firstname">
               <label class="formname" for="firstname">FIRST NAME</label><br />
-              <input type="text" id="firstname" /><br />
+              <input
+                type="text"
+                id="firstname"
+                title="Plese fill "
+                required
+              /><br />
               <span class="error"></span>
             </div>
             <div class="form-secondname">
               <label class="formname" for="secondname">SECOND NAME</label><br />
-              <input type="text" id="secondname" /><br />
+              <input type="text" id="secondname" required /><br />
               <span class="error"></span>
             </div>
             <div class="form-email">
-              <label
-                class="formname"
-                for="email"
-                id="form_email"
-                title="Plese enter a valid email"
-                >EMAIL</label
+              <label class="formname" for="email" id="form_email">EMAIL</label
               ><br />
-              <input type="email" id="email" /><br />
+              <input type="email" id="email" required /><br />
               <span class="error"></span>
             </div>
             <div class="form-number">
               <label class="formname" for="number">PHONE NUMBER</label><br />
-              <input type="number" id="number" /><br />
-              <span class="error"></span>
+              <input type="number" id="number" required /><br />
+              <span class="error" id="number-error"></span>
             </div>
             <div class="form-password">
               <label class="formname" for="password">PASSWORD</label><br />
-              <input type="password" id="password" /><br />
+              <input type="password" id="password" required /><br />
               <span class="error"></span>
             </div>
             <div class="form-name">
               <label class="formname" for="confirm-password"
                 >CONFIRM PASSWORD</label
               ><br />
-              <input type="password" id="confirm-password" /><br />
-              <span class="error"></span>
-            </div>
-            <div>
-              <button class="account-button" type="submit" value="submit">
-                Create Account
-              </button>
-              <p class="login-text">
-                Already have an account? <a class="link" href="#">Login</a>
-              </p>
+              <input type="password" id="confirm-password" required /><br />
+              <span class="error" id="password-error"></span>
             </div>
           </form>
+          <div>
+            <button class="account-button" id="submitbutton">
+              Create Account
+            </button>
+            <p class="login-text">
+              Already have an account? <a class="link" href="#">Login</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
