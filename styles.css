@@ -124,3 +124,38 @@ div > input {
   color: var(--color_two);
   font-size: 16px;
 }
+
+@media screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+    padding-bottom: 4rem;
+  }
+  .left-container {
+    height: 20vh;
+    border-radius: 0 0 35px 35px;
+  }
+  .form-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .logo-background {
+    width: 100vw;
+    margin-top: 10%;
+  }
+  .right-container {
+    padding: 3%;
+  }
+  div > input {
+    font-size: 1rem;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .para1,
+  .para2 {
+    text-align: center;
+  }
+}
